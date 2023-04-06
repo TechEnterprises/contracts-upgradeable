@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /// @author thirdweb
 
-import "@openzeppelin/contracts-upgradeable/utils/structs/BitMapsUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable-upgradeable/utils/structs/BitMapsUpgradeable.sol";
 
 /**
  *  Thirdweb's 'Drop' contracts are distribution mechanisms for tokens.

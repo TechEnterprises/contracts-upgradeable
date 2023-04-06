@@ -13,10 +13,10 @@ pragma solidity ^0.8.0;
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
 //  ==========  External imports    ==========
-import "@openzeppelin/contracts/metatx/ERC2771Context.sol";
-import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
-import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
-import "@openzeppelin/contracts/utils/Multicall.sol";
+import "@openzeppelin/contracts-upgradeable/metatx/ERC2771Context.sol";
+import "@openzeppelin/contracts-upgradeable/access/AccessControlEnumerable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/structs/EnumerableSet.sol";
+import "@openzeppelin/contracts-upgradeable/utils/Multicall.sol";
 
 //  ==========  Internal imports    ==========
 import { IContractPublisher } from "./interfaces/IContractPublisher.sol";

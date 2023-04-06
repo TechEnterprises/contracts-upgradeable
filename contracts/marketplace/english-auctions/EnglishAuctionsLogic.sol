@@ -6,12 +6,12 @@ pragma solidity ^0.8.11;
 import "./EnglishAuctionsStorage.sol";
 
 // ====== External imports ======
-import "@openzeppelin/contracts/utils/Context.sol";
-import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
-import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/interfaces/IERC2981.sol";
+import "@openzeppelin/contracts-upgradeable/utils/Context.sol";
+import "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts-upgradeable/interfaces/IERC2981.sol";
 
 // ====== Internal imports ======
 

@@ -12,9 +12,9 @@ pragma solidity ^0.8.11;
 //   \$$$$  |$$ |  $$ |$$ |$$ |      \$$$$$$$ |\$$$$$\$$$$  |\$$$$$$$\ $$$$$$$  |
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
-import "@openzeppelin/contracts/proxy/Proxy.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/utils/StorageSlot.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/Proxy.sol";
+import "@openzeppelin/contracts-upgradeable/utils/Address.sol";
+import "@openzeppelin/contracts-upgradeable/utils/StorageSlot.sol";
 
 contract TWProxy is Proxy {
     /**

@@ -12,7 +12,7 @@ pragma solidity ^0.8.0;
 //   \$$$$  |$$ |  $$ |$$ |$$ |      \$$$$$$$ |\$$$$$\$$$$  |\$$$$$$$\ $$$$$$$  |
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
-import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
+import "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSA.sol";
 import "../openzeppelin-presets/cryptography/EIP712ChainlessDomain.sol";
 
 /**

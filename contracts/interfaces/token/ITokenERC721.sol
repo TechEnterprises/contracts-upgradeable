@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-import "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable-upgradeable/token/ERC721/IERC721Upgradeable.sol";
 
 /**
  *  `SignatureMint` is an ERC 721 contract. It lets anyone mint NFTs by producing a mint request

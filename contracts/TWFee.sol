@@ -6,9 +6,9 @@ pragma solidity ^0.8.11;
 import "./TWFactory.sol";
 import "./interfaces/ITWFee.sol";
 
-import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
-import "@openzeppelin/contracts/utils/Multicall.sol";
-import "@openzeppelin/contracts/metatx/ERC2771Context.sol";
+import "@openzeppelin/contracts-upgradeable/access/AccessControlEnumerable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/Multicall.sol";
+import "@openzeppelin/contracts-upgradeable/metatx/ERC2771Context.sol";
 
 interface IFeeTierPlacementExtension {
     /// @dev Returns the fee tier for a given proxy contract address and proxy deployer address.

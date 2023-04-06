@@ -12,8 +12,8 @@ pragma solidity ^0.8.11;
 //   \$$$$  |$$ |  $$ |$$ |$$ |      \$$$$$$$ |\$$$$$\$$$$  |\$$$$$$$\ $$$$$$$  |
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/proxy/Clones.sol";
+import "@openzeppelin/contracts-upgradeable/utils/Address.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/Clones.sol";
 
 contract TWMinimalFactory {
     /// @dev Deploys a proxy that points to the given implementation.

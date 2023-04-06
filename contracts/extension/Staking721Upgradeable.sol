@@ -3,9 +3,9 @@ pragma solidity ^0.8.11;
 
 /// @author thirdweb
 
-import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 import "../openzeppelin-presets/utils/math/SafeMath.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721.sol";
 
 import "./interface/IStaking721.sol";
 

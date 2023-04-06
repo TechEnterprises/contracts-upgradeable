@@ -5,8 +5,8 @@ pragma solidity ^0.8.0;
 
 import "./interface/ISignatureMintERC1155.sol";
 
-import "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable-upgradeable/utils/cryptography/ECDSAUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol";
 
 abstract contract SignatureMintERC1155Upgradeable is Initializable, EIP712Upgradeable, ISignatureMintERC1155 {
     using ECDSAUpgradeable for bytes32;

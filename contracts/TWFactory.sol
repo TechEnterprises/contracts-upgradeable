@@ -16,11 +16,11 @@ import "./TWRegistry.sol";
 import "./interfaces/IThirdwebContract.sol";
 import "./extension/interface/IContractFactory.sol";
 
-import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
-import "@openzeppelin/contracts/metatx/ERC2771Context.sol";
-import "@openzeppelin/contracts/utils/Create2.sol";
-import "@openzeppelin/contracts/utils/Multicall.sol";
-import "@openzeppelin/contracts/proxy/Clones.sol";
+import "@openzeppelin/contracts-upgradeable/access/AccessControlEnumerable.sol";
+import "@openzeppelin/contracts-upgradeable/metatx/ERC2771Context.sol";
+import "@openzeppelin/contracts-upgradeable/utils/Create2.sol";
+import "@openzeppelin/contracts-upgradeable/utils/Multicall.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/Clones.sol";
 
 contract TWFactory is Multicall, ERC2771Context, AccessControlEnumerable, IContractFactory {
     /// @dev Only FACTORY_ROLE holders can approve/unapprove implementations for proxies to point to.

@@ -13,8 +13,8 @@ pragma solidity ^0.8.0;
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
 // ====== External imports ======
-import "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Receiver.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Receiver.sol";
 
 //  ==========  Internal imports    ==========
 import "./InitStorage.sol";
