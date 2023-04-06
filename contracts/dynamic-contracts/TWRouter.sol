@@ -31,7 +31,8 @@ abstract contract TWRouter is ITWRouter, Multicall, ExtensionState, Router {
                                 Constructor
     //////////////////////////////////////////////////////////////*/
 
-    constructor(address _extensionRegistry, string[] memory _extensionNames) {
+    constructor() initializer {};
+function initialize(address _extensionRegistry, string[] memory _extensionNames) {
         extensionRegistry = _extensionRegistry;
 
         DefaultExtensionSet map = new DefaultExtensionSet();

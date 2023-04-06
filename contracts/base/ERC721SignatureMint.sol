@@ -29,8 +29,8 @@ contract ERC721SignatureMint is ERC721Base, PrimarySale, SignatureMintERC721 {
                             Constructor
     //////////////////////////////////////////////////////////////*/
 
-    constructor(
-        string memory _name,
+    constructor() initializer {};
+function initialize        string memory _name,
         string memory _symbol,
         address _royaltyRecipient,
         uint128 _royaltyBps,

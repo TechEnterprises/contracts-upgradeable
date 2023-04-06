@@ -3,7 +3,7 @@ pragma solidity ^0.8.11;
 
 /// @author thirdweb
 
-import "@openzeppelin/contracts-upgradeable-upgradeable/security/ReentrancyGuardUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 import "../openzeppelin-presets/utils/math/SafeMath.sol";
 import "../eip/interface/IERC20.sol";
 import "../lib/CurrencyTransferLib.sol";
@@ -42,7 +42,8 @@ abstract contract Staking20Upgradeable is ReentrancyGuardUpgradeable, IStaking20
     ///@dev Mapping from condition Id to staking condition. See {struct IStaking721.StakingCondition}
     mapping(uint256 => StakingCondition) private stakingConditions;
 
-    constructor(address _nativeTokenWrapper) {
+    constructor() initializer {};
+function initialize(address _nativeTokenWrapper) {
         require(_nativeTokenWrapper != address(0), "address 0");
 
         nativeTokenWrapper = _nativeTokenWrapper;

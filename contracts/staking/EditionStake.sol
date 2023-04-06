@@ -14,14 +14,14 @@ pragma solidity ^0.8.11;
 
 // Token
 import "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/introspection/ERC165Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/token/ERC1155/IERC1155ReceiverUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155ReceiverUpgradeable.sol";
 
 // Meta transactions
 import "../openzeppelin-presets/metatx/ERC2771ContextUpgradeable.sol";
 
 // Utils
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/MulticallUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/MulticallUpgradeable.sol";
 import "../lib/CurrencyTransferLib.sol";
 
 //  ==========  Features    ==========
@@ -54,7 +54,8 @@ contract EditionStake is
     /// @dev Total amount of reward tokens in the contract.
     uint256 private rewardTokenBalance;
 
-    constructor(address _nativeTokenWrapper) initializer {
+    constructor() initializer {};
+function initialize(address _nativeTokenWrapper) initializer {
         nativeTokenWrapper = _nativeTokenWrapper;
     }
 

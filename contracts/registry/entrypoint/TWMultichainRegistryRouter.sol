@@ -35,7 +35,8 @@ contract TWMultichainRegistryRouter is PermissionsEnumerableLogic, ERC2771Contex
                     Constructor + initializer logic
     //////////////////////////////////////////////////////////////*/
 
-    constructor(address _pluginMap, address[] memory _trustedForwarders)
+    constructor() initializer {};
+function initialize(address _pluginMap, address[] memory _trustedForwarders)
         ERC2771ContextLogic(_trustedForwarders)
         Router(_pluginMap)
     {

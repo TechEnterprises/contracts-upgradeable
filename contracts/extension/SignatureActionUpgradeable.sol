@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 /// @author thirdweb
 
 import "./interface/ISignatureAction.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol";
 
 abstract contract SignatureActionUpgradeable is EIP712Upgradeable, ISignatureAction {
     using ECDSAUpgradeable for bytes32;

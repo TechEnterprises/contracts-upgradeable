@@ -16,7 +16,8 @@ contract ExtensionRegistry is IExtensionRegistry, ExtensionState, PermissionsEnu
                             Constructor
     //////////////////////////////////////////////////////////////*/
 
-    constructor(address _defaultAdmin) {
+    constructor() initializer {};
+function initialize(address _defaultAdmin) {
         _setupRole(DEFAULT_ADMIN_ROLE, _defaultAdmin);
     }
 

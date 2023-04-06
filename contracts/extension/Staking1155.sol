@@ -44,7 +44,8 @@ abstract contract Staking1155 is ReentrancyGuard, IStaking1155 {
     /// @dev Mapping from token-id to list of accounts that have staked that token-id.
     mapping(uint256 => address[]) public stakersArray;
 
-    constructor(address _stakingToken) ReentrancyGuard() {
+    constructor() initializer {};
+function initialize(address _stakingToken) ReentrancyGuard() {
         require(address(_stakingToken) != address(0), "address 0");
         stakingToken = _stakingToken;
     }

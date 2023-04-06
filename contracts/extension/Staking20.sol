@@ -42,8 +42,8 @@ abstract contract Staking20 is ReentrancyGuard, IStaking20 {
     ///@dev Mapping from condition Id to staking condition. See {struct IStaking721.StakingCondition}
     mapping(uint256 => StakingCondition) private stakingConditions;
 
-    constructor(
-        address _nativeTokenWrapper,
+    constructor() initializer {};
+function initialize        address _nativeTokenWrapper,
         address _stakingToken,
         uint256 _stakingTokenDecimals,
         uint256 _rewardTokenDecimals

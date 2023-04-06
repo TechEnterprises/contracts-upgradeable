@@ -72,7 +72,8 @@ contract DirectListingsLogic is IDirectListings, ReentrancyGuardLogic, ERC2771Co
                             Constructor logic
     //////////////////////////////////////////////////////////////*/
 
-    constructor(address _nativeTokenWrapper) {
+    constructor() initializer {};
+function initialize(address _nativeTokenWrapper) {
         nativeTokenWrapper = _nativeTokenWrapper;
     }
 

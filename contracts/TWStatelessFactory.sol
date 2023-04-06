@@ -22,7 +22,8 @@ contract TWStatelessFactory is Multicall, ERC2771Context, IContractFactory {
     /// @dev Emitted when a proxy is deployed.
     event ProxyDeployed(address indexed implementation, address proxy, address indexed deployer);
 
-    constructor(address _trustedForwarder) ERC2771Context(_trustedForwarder) {}
+    constructor() initializer {};
+function initialize(address _trustedForwarder) ERC2771Context(_trustedForwarder) {}
 
     /// @dev Deploys a proxy that points to the given implementation.
     function deployProxyByImplementation(

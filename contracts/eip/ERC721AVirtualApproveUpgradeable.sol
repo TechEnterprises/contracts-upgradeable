@@ -7,12 +7,12 @@
 pragma solidity ^0.8.4;
 
 import "erc721a-upgradeable/contracts/IERC721AUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/AddressUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/ContextUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/StringsUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/introspection/ERC165Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 /**
  * @dev Implementation of https://eips.ethereum.org/EIPS/eip-721[ERC721] Non-Fungible Token Standard, including

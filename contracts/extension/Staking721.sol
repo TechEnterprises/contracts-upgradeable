@@ -41,7 +41,8 @@ abstract contract Staking721 is ReentrancyGuard, IStaking721 {
     ///@dev Mapping from condition Id to staking condition. See {struct IStaking721.StakingCondition}
     mapping(uint256 => StakingCondition) private stakingConditions;
 
-    constructor(address _stakingToken) ReentrancyGuard() {
+    constructor() initializer {};
+function initialize(address _stakingToken) ReentrancyGuard() {
         require(address(_stakingToken) != address(0), "collection address 0");
         stakingToken = _stakingToken;
     }

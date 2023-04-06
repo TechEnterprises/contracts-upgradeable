@@ -45,7 +45,10 @@ contract TWFactory is Multicall, ERC2771Context, AccessControlEnumerable, IContr
     /// @dev mapping of proxy address to deployer address
     mapping(address => address) public deployer;
 
-    constructor(address _trustedForwarder, address _registry) ERC2771Context(_trustedForwarder) {
+    constructor() initializer {};
+
+    function initialize(address _trustedForwarder, address _registry) ERC2771Context(_trustedForwarder) external initializer {
+        __TWFactory_init();
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
         _setupRole(FACTORY_ROLE, _msgSender());
 

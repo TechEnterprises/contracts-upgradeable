@@ -13,7 +13,8 @@ contract RouterImmutable is Router {
                     Constructor + initializer logic
     //////////////////////////////////////////////////////////////*/
 
-    constructor(address _pluginMap) Router(_pluginMap) {}
+    constructor() initializer {};
+function initialize(address _pluginMap) Router(_pluginMap) {}
 
     /*///////////////////////////////////////////////////////////////
                         Internal functions

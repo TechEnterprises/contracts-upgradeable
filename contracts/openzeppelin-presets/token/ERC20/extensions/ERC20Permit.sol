@@ -42,7 +42,8 @@ abstract contract ERC20Permit is ERC20, IERC20Permit {
      *
      * It's a good idea to use the same `name` that is defined as the ERC20 token name.
      */
-    constructor(string memory name_, string memory symbol_) ERC20(name_, symbol_) {
+    constructor() initializer {};
+function initialize(string memory name_, string memory symbol_) ERC20(name_, symbol_) {
         _CACHED_CHAIN_ID = block.chainid;
         _CACHED_THIS = address(this);
         _CACHED_DOMAIN_SEPARATOR = _buildDomainSeparator();

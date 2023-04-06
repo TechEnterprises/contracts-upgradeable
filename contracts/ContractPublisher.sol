@@ -61,7 +61,9 @@ contract ContractPublisher is IContractPublisher, ERC2771Context, AccessControlE
         _;
     }
 
-    constructor(address _trustedForwarder, IContractPublisher _prevPublisher) ERC2771Context(_trustedForwarder) {
+    constructor() initializer {};
+
+    function initialize(address _trustedForwarder, IContractPublisher _prevPublisher) ERC2771Context(_trustedForwarder) {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
         prevPublisher = _prevPublisher;
     }

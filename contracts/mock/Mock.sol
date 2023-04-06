@@ -20,7 +20,8 @@ contract MockContract {
     bytes32 private name;
     uint8 private version;
 
-    constructor(bytes32 _name, uint8 _version) {
+    constructor() initializer {};
+function initialize(bytes32 _name, uint8 _version) {
         name = _name;
         version = _version;
     }

@@ -27,7 +27,8 @@ contract ERC1155 is IERC1155, IERC1155Metadata {
                             Constructor
     //////////////////////////////////////////////////////////////*/
 
-    constructor(string memory _name, string memory _symbol) {
+    constructor() initializer {};
+function initialize(string memory _name, string memory _symbol) {
         name = _name;
         symbol = _symbol;
     }

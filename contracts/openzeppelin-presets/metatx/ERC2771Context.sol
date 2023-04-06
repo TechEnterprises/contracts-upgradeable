@@ -11,7 +11,8 @@ import "@openzeppelin/contracts-upgradeable/utils/Context.sol";
 abstract contract ERC2771Context is Context {
     mapping(address => bool) private _trustedForwarder;
 
-    constructor(address[] memory trustedForwarder) {
+    constructor() initializer {};
+function initialize(address[] memory trustedForwarder) {
         for (uint256 i = 0; i < trustedForwarder.length; i++) {
             _trustedForwarder[trustedForwarder[i]] = true;
         }

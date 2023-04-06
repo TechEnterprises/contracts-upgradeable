@@ -28,7 +28,8 @@ contract TWRegistry is Multicall, ERC2771Context, AccessControlEnumerable {
     event Added(address indexed deployer, address indexed deployment);
     event Deleted(address indexed deployer, address indexed deployment);
 
-    constructor(address _trustedForwarder) ERC2771Context(_trustedForwarder) {
+    constructor() initializer {};
+function initialize(address _trustedForwarder) ERC2771Context(_trustedForwarder) {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
     }
 

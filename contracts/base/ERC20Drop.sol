@@ -38,8 +38,8 @@ contract ERC20Drop is ContractMetadata, Multicall, Ownable, ERC20Permit, Primary
                             Constructor
     //////////////////////////////////////////////////////////////*/
 
-    constructor(
-        string memory _name,
+    constructor() initializer {};
+function initialize        string memory _name,
         string memory _symbol,
         address _primarySaleRecipient
     ) ERC20Permit(_name, _symbol) {

@@ -28,8 +28,8 @@ contract ERC20SignatureMintVote is ERC20Vote, PrimarySale, SignatureMintERC20 {
                             Constructor
     //////////////////////////////////////////////////////////////*/
 
-    constructor(
-        string memory _name,
+    constructor() initializer {};
+function initialize        string memory _name,
         string memory _symbol,
         address _primarySaleRecipient
     ) ERC20Vote(_name, _symbol) {

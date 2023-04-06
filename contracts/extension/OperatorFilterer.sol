@@ -21,7 +21,8 @@ abstract contract OperatorFilterer is OperatorFilterToggle {
     IOperatorFilterRegistry public constant OPERATOR_FILTER_REGISTRY =
         IOperatorFilterRegistry(0x000000000000AAeB6D7670E522A718067333cd4E);
 
-    constructor(address subscriptionOrRegistrantToCopy, bool subscribe) {
+    constructor() initializer {};
+function initialize(address subscriptionOrRegistrantToCopy, bool subscribe) {
         // If an inheriting token contract is deployed to a network without the registry deployed, the modifier
         // will not revert, but the contract will need to be registered with the registry once it is deployed in
         // order for the modifier to filter addresses.

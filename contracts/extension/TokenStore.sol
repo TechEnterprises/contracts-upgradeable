@@ -27,7 +27,8 @@ contract TokenStore is TokenBundle, ERC721Holder, ERC1155Holder {
     /// @dev The address of the native token wrapper contract.
     address internal immutable nativeTokenWrapper;
 
-    constructor(address _nativeTokenWrapper) {
+    constructor() initializer {};
+function initialize(address _nativeTokenWrapper) {
         nativeTokenWrapper = _nativeTokenWrapper;
     }
 

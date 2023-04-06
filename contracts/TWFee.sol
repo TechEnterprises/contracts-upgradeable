@@ -55,13 +55,17 @@ contract TWFee is ITWFee, Multicall, ERC2771Context, AccessControlEnumerable, IF
     event TierUpdated(address indexed proxyOrDeployer, uint256 tierId, uint256 validUntilTimestamp);
     event FeeTierUpdated(uint256 indexed tierId, uint256 indexed feeType, address recipient, uint256 bps);
 
-    constructor(address _trustedForwarder, address _factory) ERC2771Context(_trustedForwarder) {
+    constructor() initializer {};
+        
+    function initialize(address _trustedForwarder, address _factory) ERC2771Context(_trustedForwarder) {
         factory = TWFactory(_factory);
 
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
         _setupRole(TIER_FEE_ROLE, _msgSender());
         _setupRole(TIER_CONTROLLER_ROLE, _msgSender());
     }
+
+    
 
     function setFeeTierPlacementExtension(address _extension) public onlyRole(DEFAULT_ADMIN_ROLE) {
         tierPlacementExtension = IFeeTierPlacementExtension(_extension);

@@ -17,7 +17,9 @@ import "@openzeppelin/contracts-upgradeable/proxy/Clones.sol";
 
 contract TWMinimalFactory {
     /// @dev Deploys a proxy that points to the given implementation.
-    constructor(
+    constructor() initializer {};
+
+    function initialize(
         address _implementation,
         bytes memory _data,
         bytes32 _salt

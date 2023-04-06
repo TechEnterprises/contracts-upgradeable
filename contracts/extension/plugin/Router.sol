@@ -40,7 +40,8 @@ abstract contract Router is Multicall, ERC165, IRouter {
                     Constructor + initializer logic
     //////////////////////////////////////////////////////////////*/
 
-    constructor(address _pluginMap) {
+    constructor() initializer {};
+function initialize(address _pluginMap) {
         pluginMap = _pluginMap;
     }
 

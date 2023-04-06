@@ -54,8 +54,8 @@ contract Staking1155Base is ContractMetadata, Multicall, Ownable, Staking1155, E
     /// @dev Total amount of reward tokens in the contract.
     uint256 private rewardTokenBalance;
 
-    constructor(
-        uint256 _defaultTimeUnit,
+    constructor() initializer {};
+function initialize        uint256 _defaultTimeUnit,
         uint256 _defaultRewardsPerUnitTime,
         address _stakingToken,
         address _rewardToken,

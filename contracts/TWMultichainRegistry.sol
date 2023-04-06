@@ -32,7 +32,8 @@ contract TWMultichainRegistry is ITWMultichainRegistry, Multicall, ERC2771Contex
 
     EnumerableSet.UintSet private chainIds;
 
-    constructor(address _trustedForwarder) ERC2771Context(_trustedForwarder) {
+    constructor() initializer {};
+    function initialize(address _trustedForwarder) ERC2771Context(_trustedForwarder) {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
     }
 

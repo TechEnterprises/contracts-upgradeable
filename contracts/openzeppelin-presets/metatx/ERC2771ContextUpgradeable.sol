@@ -3,8 +3,8 @@
 
 pragma solidity ^0.8.11;
 
-import "@openzeppelin/contracts-upgradeable-upgradeable/utils/ContextUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 /**
  * @dev Context variant with ERC2771 support.

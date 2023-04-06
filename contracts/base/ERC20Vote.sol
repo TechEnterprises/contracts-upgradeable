@@ -29,7 +29,8 @@ contract ERC20Vote is ContractMetadata, Multicall, Ownable, ERC20Votes {
                             Constructor
     //////////////////////////////////////////////////////////////*/
 
-    constructor(string memory _name, string memory _symbol) ERC20Permit(_name, _symbol) {
+    constructor() initializer {};
+function initialize(string memory _name, string memory _symbol) ERC20Permit(_name, _symbol) {
         _setupOwner(msg.sender);
     }
 
